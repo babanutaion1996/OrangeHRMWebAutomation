@@ -24,8 +24,9 @@ pipeline{
     stages{
         stage('Checkout'){
             steps{
-                git url: 'EVERYONE WILL PUT THEIR OWN URL',
-                credentialsId: 'YOURGITHUBPAT-ID-ONJENKINS'
+                git url: 'https://github.com/babanutaion1996/OrangeHRMWebAutomation.git',
+                branch: 'main',
+                credentialsId: 'ion-pat'
             }
         }
         stage('UI Tests'){
@@ -58,10 +59,3 @@ pipeline{
 
     }
 
-
-
-
-
-
-
-}
