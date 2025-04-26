@@ -26,7 +26,7 @@ pipeline{
             steps{
                 git url: 'https://github.com/babanutaion1996/OrangeHRMWebAutomation.git',
                 branch: 'main',
-                credentialsId: 'ion-PATH'
+                credentialsId: 'ion-pat'
             }
         }
         stage('UI Tests'){
