@@ -51,9 +51,8 @@ pipeline{
 
         post{
             always {
-                archiveArtifacts artifacts: 'target/HRM-AutomationReport.html',
-                emailext body: 'Summary', subject: 'Pipeline Status', to: 'babanuta.ion1996@gmail.com',
-                fingerprint: true
+
+                emailext body: 'Summary', subject: 'Pipeline Status', to: 'babanuta.ion1996@gmail.com'
             }
 
         }
