@@ -52,7 +52,7 @@ pipeline{
         post{
             always {
 
-                emailext body: 'Summary', subject: 'Pipeline Status', to: 'babanuta.ion1996@gmail.com'
+             
             }
 
         }
